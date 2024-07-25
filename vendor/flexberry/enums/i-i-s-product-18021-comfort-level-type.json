@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.Product_18021",
+  "className": "ComfortLevelType",
+  "enumObjects": {
+    "Standard": "Standard",
+    "Economy": "Economy",
+    "Luxury": "Luxury",
+    "PresidentialSuite": "Presidential Suite"
+  }
+}

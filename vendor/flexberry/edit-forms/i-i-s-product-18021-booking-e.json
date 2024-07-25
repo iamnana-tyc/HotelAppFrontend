@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Client",
+      "projection": "ClientL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Room",
+      "projection": "RoomL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Booking",
+  "name": "IISProduct_18021BookingE",
+  "className": "BookingE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-18021-booking",
+      "modelProjection": "BookingE"
+    }
+  ]
+}

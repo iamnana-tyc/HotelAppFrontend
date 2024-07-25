@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "h-a-p-i-booking-e",
+  "editForm": "h-a-p-i-booking-e",
+  "external": false,
+  "caption": "Booking",
+  "name": "HAPIBookingL",
+  "className": "BookingL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "h-a-p-i-booking",
+      "modelProjection": "BookingL"
+    }
+  ]
+}

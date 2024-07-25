@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "h-a-p-i-client-e",
+  "editForm": "h-a-p-i-client-e",
+  "external": false,
+  "caption": "Client",
+  "name": "HAPIClientL",
+  "className": "ClientL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "h-a-p-i-client",
+      "modelProjection": "ClientL"
+    }
+  ]
+}

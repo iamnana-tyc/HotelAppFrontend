@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISProduct_18021Booking",
+  "modelName": "i-i-s-product-18021-booking",
+  "className": "Booking",
+  "nameSpace": "IIS.Product_18021",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "checkIn",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "checkOut",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "guestName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "i-i-s-product-18021-client",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "room",
+      "relatedTo": "i-i-s-product-18021-room",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BookingE",
+      "modelName": "i-i-s-product-18021-booking",
+      "attrs": [
+        {
+          "name": "guestName",
+          "caption": "Guest name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "checkIn",
+          "caption": "Check in",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "checkOut",
+          "caption": "Check out",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "FirstName",
+          "lookupValueField": "firstName",
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "firstName",
+              "caption": "First name",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Client",
+          "name": "client",
+          "relatedTo": "i-i-s-product-18021-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": "RoomNumber",
+          "lookupValueField": "roomNumber",
+          "relationName": "Room",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "roomNumber",
+              "caption": "Room number",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Room",
+          "name": "room",
+          "relatedTo": "i-i-s-product-18021-room",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "BookingL",
+      "modelName": "i-i-s-product-18021-booking",
+      "attrs": [
+        {
+          "name": "guestName",
+          "caption": "Guest name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "checkIn",
+          "caption": "Check in",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "checkOut",
+          "caption": "Check out",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "firstName",
+              "caption": "First name",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "First name",
+          "name": "client",
+          "relatedTo": "i-i-s-product-18021-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Room",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "roomNumber",
+              "caption": "Room number",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Room number",
+          "name": "room",
+          "relatedTo": "i-i-s-product-18021-room",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

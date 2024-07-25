@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Room",
+      "projection": "RoomL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Booking",
+  "name": "HAPIBookingE",
+  "className": "BookingE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "h-a-p-i-booking",
+      "modelProjection": "BookingE"
+    }
+  ]
+}

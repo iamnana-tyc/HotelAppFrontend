@@ -1,0 +1,75 @@
+<h3 class="ui header">{{t "forms.h-a-p-i-booking-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.guestName
+      class=(if (v-get validationModel "guestName" "isInvalid") "error")
+      label=(t "forms.h-a-p-i-booking-e.guestName-caption")
+      data-test-h-a-p-i-booking-e-guestName=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "guestName" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.h-a-p-i-booking-e.checkIn-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.checkIn
+      class=(if (v-get validationModel "checkIn" "isInvalid") "error")
+      data-test-h-a-p-i-booking-e-checkIn=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "checkIn" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.h-a-p-i-booking-e.checkOut-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.checkOut
+      class=(if (v-get validationModel "checkOut" "isInvalid") "error")
+      data-test-h-a-p-i-booking-e-checkOut=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "checkOut" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.h-a-p-i-booking-e.room-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.room
+      relationName="room"
+      projection="RoomL"
+      title=(t "forms.h-a-p-i-booking-e.room-caption")
+      readonly=readonly
+      componentName="roomLookup"
+      class=(if (v-get validationModel "room" "isInvalid") "error")
+      data-test-h-a-p-i-booking-e-room=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "room" "message")}}
+  </div>
+</form>

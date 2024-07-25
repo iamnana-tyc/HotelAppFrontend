@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Room",
+  "name": "IISProduct_18021RoomE",
+  "className": "RoomE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-18021-room",
+      "modelProjection": "RoomE"
+    }
+  ]
+}

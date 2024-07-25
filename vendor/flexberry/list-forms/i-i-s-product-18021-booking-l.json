@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-product-18021-booking-e",
+  "editForm": "i-i-s-product-18021-booking-e",
+  "external": false,
+  "caption": "Booking",
+  "name": "IISProduct_18021BookingL",
+  "className": "BookingL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-18021-booking",
+      "modelProjection": "BookingL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Client",
+  "name": "HAPIClientE",
+  "className": "ClientE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "h-a-p-i-client",
+      "modelProjection": "ClientE"
+    }
+  ]
+}

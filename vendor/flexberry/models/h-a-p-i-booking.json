@@ -1,0 +1,126 @@
+﻿{
+  "name": "HAPIBooking",
+  "modelName": "h-a-p-i-booking",
+  "className": "Booking",
+  "nameSpace": "HAPI",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "checkIn",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "checkOut",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "guestName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "h-a-p-i-client",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "room",
+      "relatedTo": "h-a-p-i-room",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BookingE",
+      "modelName": "h-a-p-i-booking",
+      "attrs": [
+        {
+          "name": "guestName",
+          "caption": "Guest name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "checkIn",
+          "caption": "Check in",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "checkOut",
+          "caption": "Check out",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Room",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "default",
+          "caption": "",
+          "name": "room",
+          "relatedTo": "h-a-p-i-room",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "BookingL",
+      "modelName": "h-a-p-i-booking",
+      "attrs": [
+        {
+          "name": "guestName",
+          "caption": "Guest name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "checkIn",
+          "caption": "Check in",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "checkOut",
+          "caption": "Check out",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,96 @@
+﻿{
+  "name": "HAPIRoom",
+  "modelName": "h-a-p-i-room",
+  "className": "Room",
+  "nameSpace": "HAPI",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "price",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "roomNumber",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "roomType",
+      "type": "h-a-p-i-comfort-level-type",
+      "flexberryType": "ComfortLevelType",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "RoomE",
+      "modelName": "h-a-p-i-room",
+      "attrs": [
+        {
+          "name": "roomNumber",
+          "caption": "Room number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "roomType",
+          "caption": "Room type",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "RoomL",
+      "modelName": "h-a-p-i-room",
+      "attrs": [
+        {
+          "name": "roomNumber",
+          "caption": "Room number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "roomType",
+          "caption": "Room type",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

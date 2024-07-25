@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISProduct_18021Room",
+  "modelName": "i-i-s-product-18021-room",
+  "className": "Room",
+  "nameSpace": "IIS.Product_18021",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "price",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "roomNumber",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "roomType",
+      "type": "i-i-s-product-18021-comfort-level-type",
+      "flexberryType": "ComfortLevelType",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "RoomE",
+      "modelName": "i-i-s-product-18021-room",
+      "attrs": [
+        {
+          "name": "roomNumber",
+          "caption": "Room number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "roomType",
+          "caption": "Room type",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "RoomL",
+      "modelName": "i-i-s-product-18021-room",
+      "attrs": [
+        {
+          "name": "roomNumber",
+          "caption": "Room number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "roomType",
+          "caption": "Room type",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

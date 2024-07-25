@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "HAPI",
+  "applicationTitle": "HAPI",
+  "items": [
+    {
+      "link": null,
+      "menuName": "h-a-p-i",
+      "caption": "HAPI",
+      "title": "HAPI",
+      "children": [
+        {
+          "link": "h-a-p-i-client-l",
+          "menuName": null,
+          "caption": "Client",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "h-a-p-i-booking-l",
+          "menuName": null,
+          "caption": "Booking",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "h-a-p-i-room-l",
+          "menuName": null,
+          "caption": "Room",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

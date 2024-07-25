@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "HAPI",
+  "className": "ComfortLevelType",
+  "enumObjects": {
+    "Standard": "Standard",
+    "Economy": "Economy",
+    "Luxury": "Luxury",
+    "PresidentialSuite": "Presidential suite"
+  }
+}

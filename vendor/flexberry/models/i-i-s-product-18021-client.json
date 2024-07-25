@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISProduct_18021Client",
+  "modelName": "i-i-s-product-18021-client",
+  "className": "Client",
+  "nameSpace": "IIS.Product_18021",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "email",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "passportNumber",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "phoneNumber",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ClientE",
+      "modelName": "i-i-s-product-18021-client",
+      "attrs": [
+        {
+          "name": "firstName",
+          "caption": "First name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "lastName",
+          "caption": "Last name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "phoneNumber",
+          "caption": "Phone number",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "passportNumber",
+          "caption": "Passport number",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ClientL",
+      "modelName": "i-i-s-product-18021-client",
+      "attrs": [
+        {
+          "name": "firstName",
+          "caption": "First name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "lastName",
+          "caption": "Last name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "phoneNumber",
+          "caption": "Phone number",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "passportNumber",
+          "caption": "Passport number",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

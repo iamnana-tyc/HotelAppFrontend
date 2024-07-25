@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "h-a-p-i-room-e",
+  "editForm": "h-a-p-i-room-e",
+  "external": false,
+  "caption": "Room",
+  "name": "HAPIRoomL",
+  "className": "RoomL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "h-a-p-i-room",
+      "modelProjection": "RoomL"
+    }
+  ]
+}
